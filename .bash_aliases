@@ -16,6 +16,8 @@ alias sysupdate='sudo apt-get update && sudo apt-get upgrade -y'
 alias cpun='cat /proc/cpuinfo | grep processor | wc -l'
 alias speedtest='python ~/tools/speedtest-cli.py --share'
 alias iotest='dd if=/dev/zero of=iotest bs=64k count=16k conv=fdatasync && rm -rf iotest'
+alias cppp='sudo cat /dev/ppp 2>&1 >/dev/null | grep "No such device or address" && echo "PPP is enabled" || echo "PPP is not enabled"'
+alias ctun='sudo cat /dev/net/tun 2>&1 >/dev/null | grep "File descriptor in bad state" && echo "TUN/TAP is enabled" || echo "TUN/TAP is not enabled"'
 
 # Jenkins
 alias ejenkins='sudo vi /etc/default/jenkins'
