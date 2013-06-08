@@ -9,6 +9,7 @@ alias ebashrc='vi ~/.bashrc'
 alias ealias='vi ~/.bash_aliases'
 alias lalias='. ~/.bashrc'
 alias lbashrc='. ~/.bashrc'
+alias updatealias='wget https://raw.github.com/zhahui/aliases/master/.bash_aliases --no-check-certificate -O ~/.bash_aliases && lalias'
 alias sysupdate='sudo apt-get update && sudo apt-get upgrade'
 
 # Util
