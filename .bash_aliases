@@ -38,3 +38,8 @@ alias gitbbt='ssh -T git@bitbucket.org'
 alias gitcpkey='scp hzha@hvps.huizha.net:/home/hzha/.ssh/id_* ~/.ssh'
 alias gitaddalias='git add ~/.bash_aliases && git commit' 
 alias gitpush='git push origin master'
+alias gs='git status'
+
+# vnc
+alias vncs='vncserver -geometry 1280x1024 -depth 24'
+alias vnck='vncserver -kill :1'
