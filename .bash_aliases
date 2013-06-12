@@ -41,5 +41,5 @@ alias gitpush='git push origin master'
 alias gs='git status'
 
 # vnc
-alias vncs='vncserver -geometry 1280x1024 -depth 24'
+alias vncs='vncserver -geometry 1280x960 -depth 24'
 alias vnck='vncserver -kill :1'
