@@ -14,8 +14,10 @@ alias sysupdate='sudo apt-get update && sudo apt-get upgrade -y'
 
 # Util
 alias cpun='cat /proc/cpuinfo | grep processor | wc -l'
+alias bench='wget freevps.us/downloads/bench.sh -O - -o /dev/null|bash'
 alias testspeed='python ~/tools/speedtest-cli.py --share'
-alias testio='dd if=/dev/zero of=iotest bs=64k count=16k conv=fdatasync && rm -rf iotest'
+#alias testio='dd if=/dev/zero of=iotest bs=64k count=16k conv=fdatasync && rm -rf iotest'
+alias testio='dd if=/dev/zero of=iotest bs=64k count=16k conv=fdatasync; unlink iotest'
 alias testppp='sudo cat /dev/ppp 2>&1 >/dev/null | grep "No such device or address" && echo "PPP is enabled" || echo "PPP is not enabled"'
 alias testtun='sudo cat /dev/net/tun 2>&1 >/dev/null | grep "File descriptor in bad state" && echo "TUN/TAP is enabled" || echo "TUN/TAP is not enabled"'
 
